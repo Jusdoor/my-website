@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Image Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+        }
+        .gallery {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .gallery img {
+            margin: 10px;
+            width: 300px;
+            height: auto;
+            border: 2px solid #ddd;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease;
+        }
+        .gallery img:hover {
+            transform: scale(1.05); /* Hover effect to slightly zoom */
+        }
+        .gallery a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>My Personal Image Gallery</h1>
+    <div class="gallery">
+        <!-- 第二张和第三张图片可以点击放大 -->
+        <a href="images/2.jpg" target="_blank">
+            <img src="images/2.jpg" alt="Image 2">
+        </a>
+        <a href="images/3.jpg" target="_blank">
+            <img src="images/3.jpg" alt="Image 3">
+        </a>
+    </div>
+</body>
+</html>
+
